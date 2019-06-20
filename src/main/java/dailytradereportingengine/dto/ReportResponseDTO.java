@@ -4,18 +4,18 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
-public class ReportResponse {
+public class ReportResponseDTO {
 
 	private Map<Date, Double> settlementBuyMap;
 	
 	private Map<Date, Double> settlementSellMap;
 	
-	private List<Trade> buyTrades;
+	private List<TradeDTO> buyTrades;
 	
-	private List<Trade> sellTrades;
+	private List<TradeDTO> sellTrades;
 	
-	public ReportResponse(Map<Date, Double> settlementBuyMap, Map<Date, Double> settlementSellMap,
-			List<Trade> buyTrades, List<Trade> sellTrades) {
+	public ReportResponseDTO(Map<Date, Double> settlementBuyMap, Map<Date, Double> settlementSellMap,
+			List<TradeDTO> buyTrades, List<TradeDTO> sellTrades) {
 		super();
 		this.settlementBuyMap = settlementBuyMap;
 		this.settlementSellMap = settlementSellMap;
@@ -39,19 +39,19 @@ public class ReportResponse {
 		this.settlementSellMap = settlementSellMap;
 	}
 
-	public List<Trade> getBuyTrades() {
+	public List<TradeDTO> getBuyTrades() {
 		return buyTrades;
 	}
 
-	public void setBuyTrades(List<Trade> buyTrades) {
+	public void setBuyTrades(List<TradeDTO> buyTrades) {
 		this.buyTrades = buyTrades;
 	}
 
-	public List<Trade> getSellTrades() {
+	public List<TradeDTO> getSellTrades() {
 		return sellTrades;
 	}
 
-	public void setSellTrades(List<Trade> sellTrades) {
+	public void setSellTrades(List<TradeDTO> sellTrades) {
 		this.sellTrades = sellTrades;
 	}
 	

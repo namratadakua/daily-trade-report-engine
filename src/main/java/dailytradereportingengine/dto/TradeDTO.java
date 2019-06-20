@@ -9,12 +9,7 @@ import java.util.Date;
  * @author namratadakua
  *
  */
-public class Trade implements java.io.Serializable{
-
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+public class TradeDTO {
 
 	private String entity;
 	
@@ -38,9 +33,8 @@ public class Trade implements java.io.Serializable{
 	
 	private double usdSettledAmount;
 	
-	public Trade(String entity, char instructionType, double agreedFx, String currency, Date instructionDate,
+	public TradeDTO(String entity, char instructionType, double agreedFx, String currency, Date instructionDate,
 			Date settlmentDate, long units, double pricePerUnit) {
-		super();
 		this.entity = entity;
 		this.instructionType = instructionType;
 		this.agreedFx = agreedFx;

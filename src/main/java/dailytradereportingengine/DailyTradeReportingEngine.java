@@ -5,7 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
-import dailytradereportingengine.dto.Trade;
+import dailytradereportingengine.dto.TradeDTO;
 import dailytradereportingengine.services.ReportEngineService;
 
 public class DailyTradeReportingEngine {
@@ -15,14 +15,14 @@ public class DailyTradeReportingEngine {
 		
 		SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
 		
-		List<Trade> trades = new ArrayList<Trade>();
+		List<TradeDTO> trades = new ArrayList<TradeDTO>();
 		
 		try {
-			Trade trade1 = new Trade("foo", 'B', 0.5, "SGP", sdf.parse("01-01-2016"),sdf.parse("02-01-2016"), 200, 100.25);
-			Trade trade2 = new Trade("bar", 'S', 0.22, "AED", sdf.parse("05-01-2016"),sdf.parse("07-01-2016"), 450, 150.5);
-			Trade trade3 = new Trade("foo", 'S', 0.5, "AED", sdf.parse("01-01-2016"),sdf.parse("08-01-2016"), 200, 100.25);
-			Trade trade4 = new Trade("xyz", 'S', 0.5, "SGP", sdf.parse("01-01-2016"),sdf.parse("05-01-2016"), 200, 200.25);
-			Trade trade5 = new Trade("xyz", 'B', 0.5, "SAR", sdf.parse("07-01-2016"),sdf.parse("02-01-2016"), 300, 100.00);
+			TradeDTO trade1 = new TradeDTO("foo", 'B', 0.5, "SGP", sdf.parse("01-01-2016"),sdf.parse("02-01-2016"), 200, 100.25);
+			TradeDTO trade2 = new TradeDTO("bar", 'S', 0.22, "AED", sdf.parse("05-01-2016"),sdf.parse("07-01-2016"), 450, 150.5);
+			TradeDTO trade3 = new TradeDTO("foo", 'S', 0.5, "AED", sdf.parse("01-01-2016"),sdf.parse("08-01-2016"), 200, 100.25);
+			TradeDTO trade4 = new TradeDTO("xyz", 'S', 0.5, "SGP", sdf.parse("01-01-2016"),sdf.parse("05-01-2016"), 200, 200.25);
+			TradeDTO trade5 = new TradeDTO("xyz", 'B', 0.5, "SAR", sdf.parse("07-01-2016"),sdf.parse("02-01-2016"), 300, 100.00);
 			
 			trades.add(trade1);
 			trades.add(trade2);

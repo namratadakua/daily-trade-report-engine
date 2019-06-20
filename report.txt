@@ -1,0 +1,35 @@
+=========== Amount in USD settled incoming everyday ==========
+
+Settled Date   | Total Settlement Amount of day
+
+05 Jan 2016  |  20025.0
+
+07 Jan 2016  |  14899.5
+
+10 Jan 2016  |  10025.0
+
+=========== Amount in USD settled outgoing everyday ==========
+
+Settled Date   | Total Settlement Amount of day
+
+03 Jan 2016  |  15000.0
+
+04 Jan 2016  |  10025.0
+
+=========== Ranking of Entities based on Incoming Amount ==========
+
+Settles Date   |  Entity | Settled Amount | Rank
+
+05 Jan 2016  |  xyz  |  20025.0  |  1
+
+07 Jan 2016  |  bar  |  14899.5  |  1
+
+10 Jan 2016  |  foo  |  10025.0  |  1
+
+=========== Ranking of Entities based on outgoing Amount ==========
+
+Settles Date   |  Entity | Settled Amount | Rank
+
+03 Jan 2016  |  xyz  |  15000.0  |  1
+
+04 Jan 2016  |  foo  |  10025.0  |  1

@@ -118,7 +118,7 @@ public class ReportEngineService {
 	 * This methods finds the next Arabic working day recursively 
 	 * 
 	 * @param date
-	 * @return
+	 * @return Date
 	 */
 	private Date getNextArabicWorkigDay(Date date) {
 		Calendar calendar = Calendar.getInstance();
@@ -139,7 +139,7 @@ public class ReportEngineService {
 	 * This methods find the next working day recursively
 	 * 
 	 * @param date
-	 * @return
+	 * @return Date
 	 */
 	private Date getNextWorkigDay(Date date) {
 		Calendar calendar = Calendar.getInstance();
@@ -199,7 +199,7 @@ public class ReportEngineService {
 	 * incoming/outing USD amount
 	 * 
 	 * @param settlementMap
-	 * @return
+	 * @return LinkedHashMap<Date, Double>
 	 */
 	private LinkedHashMap<Date, Double> printUsdAmountPerDayReport(Map<Date, Double> settlementMap) {
 
